@@ -47,7 +47,7 @@ nav .wrap{display:flex; align-items:center; justify-content:space-between; paddi
 .nav-tog.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
 /* HERO */
-.hero{padding:150px 0 110px; text-align:center; position:relative; overflow:hidden;}
+.hero{padding:150px 0 60px; text-align:center; position:relative; overflow:hidden;}
 .hero::before{
   content:""; position:absolute; top:-200px; left:50%; transform:translateX(-50%);
   width:900px; height:600px; background:radial-gradient(circle, rgba(2,84,168,0.25), transparent 65%);
@@ -89,6 +89,8 @@ h1 .accent{color:var(--blue-light);}
   display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px; flex-shrink:0;
 }
 .plan-label{font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--blue-light); font-weight:700;}
+
+.plan-strip{padding:24px 0 40px;}
 
 .kicker{font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--mauve); font-weight:700; margin-bottom:14px;}
 h2{font-size:clamp(28px,4vw,42px); font-weight:800; letter-spacing:-0.5px; margin-bottom:20px;}
@@ -241,6 +243,13 @@ h2 .accent{color:var(--blue-light);}
 .uniform-card .u-num{font-size:11px; color:var(--blue-light); font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;}
 .uniform-card h4{font-size:16px; font-weight:800; margin-bottom:10px;}
 .uniform-card p{font-size:13px; color:var(--grey);}
+
+/* FUTURE OPPORTUNITY */
+.future-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+@media(max-width:800px){.future-grid{grid-template-columns:1fr;}}
+.future-card{background:var(--navy-2); border:1px solid var(--line); border-radius:14px; padding:28px; border-left:3px solid var(--blue-light);}
+.future-card h4{font-size:16px; font-weight:800; margin-bottom:8px;}
+.future-card p{font-size:13.5px; color:var(--grey);}
 
 /* HORIZON */
 .horizon-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
